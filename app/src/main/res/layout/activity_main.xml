@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipToPadding="true"
+             android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/edittext_horizontal_margin"
+            android:layout_marginLeft="@dimen/edittext_horizontal_margin"
+            android:layout_marginRight="@dimen/edittext_horizontal_margin"
+            android:layout_marginStart="@dimen/edittext_horizontal_margin"
+            android:layout_marginTop="@dimen/edittext_horizontal_margin"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="7"
+                android:background="@drawable/selector_edittext"
+                android:hint="@string/input_hint"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/selector_search_bg"
+                android:clickable="true"
+                android:src="@drawable/search"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_counts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_search"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="@color/gray_dark"
+            android:textSize="16sp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_counts"
+            android:padding="@dimen/edittext_horizontal_margin"/>
+
+        <LinearLayout
+            android:id="@+id/ll_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"/>
+    </RelativeLayout>
+</FrameLayout>

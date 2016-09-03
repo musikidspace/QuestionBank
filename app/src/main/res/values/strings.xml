@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">题库</string>
+    <string name="input_hint">题目中的文字(勿太少)</string>
+    <string name="waiting">请稍候…</string>
+</resources>

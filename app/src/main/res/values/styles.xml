@@ -1,0 +1,67 @@
+<resources>
+
+    <style name="NoTitleTheme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="NoTitleTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item><!-- 将背景设为图片(或透明)，启动时不会有黑屏闪过 -->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>-->
+    </style>
+
+    <style name="ActionBarTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!--         设置应用程序背景色 -->
+        <item name="android:windowBackground">@color/dark</item>
+        <!--         设置ActionBar样式 -->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <!--         ActionBar条目背景选择器 -->
+        <item name="android:actionBarItemBackground">@drawable/selector_actionbar_item</item>
+        <!--         更多菜单的按钮样式 , 针对没有菜单按键的设备-->
+        <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <!--         ActionBar 背景 -->
+        <item name="android:background">@color/dark</item>
+        <!--         ActionBar 图标, 透明(不设置) -->
+        <item name="android:icon">@android:color/transparent</item>
+        <!--         ActionBar 标题文字样式 -->
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <!--         ActionBar 副标题样式, 白色 -->
+        <item name="android:subtitleTextStyle">@style/SubtitleTextStyle</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+    <style name="SubtitleTextStyle">
+        <item name="android:textColor">@color/gray_text</item>
+        <item name="android:textSize">@dimen/subtitle_text_size</item>
+    </style>
+
+    <style name="OverflowButton" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <!--<item name="android:src">@drawable/actionbar_search</item>-->
+    </style>
+
+    <style name="Style_EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/edittext_horizontal_margin</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>
